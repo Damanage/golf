@@ -1,0 +1,26 @@
+{
+  "name": "golf",
+  "version": "1.0.0",
+  "description": "tour score golf app",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Damanage/golf.git"
+  },
+  "keywords": [
+    "golf",
+    "yourscore"
+  ],
+  "author": "DmitryChekunov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Damanage/golf/issues"
+  },
+  "homepage": "https://github.com/Damanage/golf#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
