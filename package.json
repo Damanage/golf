@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/Damanage/golf#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.0",
+    "imagemin-pngquant": "^5.1.0"
   }
 }
