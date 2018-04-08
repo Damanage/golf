@@ -1,7 +1,49 @@
 header {
+  height: 10%;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 3px 3px 25px 0px rgba(130, 130, 130, 0.28); }
 
-html {
+.header-wrp {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.header-item {
+  display: inline-block; }
+
+.login {
+  text-align: right; }
+  .login .sign-in {
+    border-right: 2px solid grey;
+    padding-right: 5%; }
+  .login .sign-out {
+    padding-left: 5%; }
+
+.header-logo {
+  height: 100%; }
+  .header-logo img {
+    height: 90%;
+    padding: 5% 0; }
+
+.hdr-menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  font-weight: 600; }
+  .hdr-menu .header-item {
+    cursor: pointer; }
+    .hdr-menu .header-item:hover {
+      color: green; }
+
+.wrapper {
+  height: 100%; }
+
+html, body {
+  height: 100%;
+  width: 100%;
   padding: 0;
   margin: 0; }
