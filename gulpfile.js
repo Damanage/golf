@@ -5,7 +5,7 @@ var gulp        = require('gulp'),
     pngq        = require('imagemin-pngquant');
 
 gulp.task('sass', () => {
-    return  gulp.src('app/sass/main.sass')
+    return  gulp.src('app/sass/**/*.sass')
         .pipe(sass())
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream:true}))
@@ -32,7 +32,7 @@ gulp.task('img', ()=>{
 });
 
 gulp.task('watch', ['browser-sync', 'sass'], () => {
-    gulp.watch('app/sass/main.sass', ['sass']);
+    gulp.watch('app/sass/**/*.sass', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/*.js', browserSync.reload);
 })
