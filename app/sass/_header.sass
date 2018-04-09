@@ -5,7 +5,7 @@ header
     align-items: center
     box-shadow: 3px 3px 25px 0px hsla(300, 0%, 51%, 0.28)
 .header-wrp
-    width: 40%
+    width: 25%
     height: 100%
     display: flex
     flex-direction: column
@@ -13,6 +13,8 @@ header
 .header-item
     display: inline-block
 .login
+    font-weight: normal
+    color: $subHdrGrey
     text-align: right
     .sign-in
         border-right: 2px solid grey
@@ -22,9 +24,10 @@ header
 .header-logo
     height: 100%
     img 
-        height: 90%
+        height: 80%
         padding: 5% 0
 .hdr-menu
+    color: $hdrGrey
     display: flex
     justify-content: space-between
     font-size: 1.2em
@@ -32,4 +35,4 @@ header
     .header-item
         cursor: pointer
         &:hover
-            color: green
+            color: $greenColor
