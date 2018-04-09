@@ -80,6 +80,7 @@ header {
   .text-wrp .buttons {
     text-align: center; }
     .text-wrp .buttons div {
+      cursor: pointer;
       font-weight: bold;
       box-sizing: border-box;
       background-color: #898888;
@@ -100,6 +101,14 @@ header {
 .av-icons i {
   padding: 2px;
   color: #639e39; }
+
+.second-section {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to left bottom, #f67d1b, #d14b4f, #8c385d, #442d47, #171718); }
+
+.third-section {
+  height: 100vh; }
 
 .wrapper {
   height: 100%;
