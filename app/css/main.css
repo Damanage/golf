@@ -82,7 +82,7 @@ header {
     background-color: #898888;
     color: white;
     display: inline-block;
-    padding: 10px 25px;
+    padding: 15px 35px;
     -webkit-border-radius: 20px;
             border-radius: 20px;
     border: 2px solid transparent;
@@ -165,11 +165,66 @@ header {
   height: 100vh;
   width: 100%; }
 
+.slider-count {
+  height: 30%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  .slider-count span {
+    display: block;
+    background-color: white;
+    text-align: center;
+    color: #383838;
+    vertical-align: middle; }
+
+.slider-text {
+  height: 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%; }
+  .slider-text .text h2 {
+    font-size: 1.8rem; }
+  .slider-text .text h3 {
+    font-size: 1.5rem; }
+  .slider-text .text p {
+    font-size: 1.3rem; }
+
 .slider {
   height: 100vh;
   width: 100%;
   overflow: hidden; }
   .slider .slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%;
     width: 100%;
     color: white;
@@ -177,11 +232,20 @@ header {
     -webkit-transition: all 100ms ease;
     -o-transition: all 100ms ease;
     transition: all 100ms ease; }
-    .slider .slide .buttons button {
-      background-color: transparent;
-      border: 2px solid #898888; }
-      .slider .slide .buttons button:hover {
-        border-color: #639e39; }
+    .slider .slide .buttons {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .slider .slide .buttons button {
+        background-color: transparent;
+        border: 2px solid #898888; }
+        .slider .slide .buttons button:hover {
+          border-color: #639e39; }
   .slider .slide-one {
     background-image: -webkit-gradient(linear, left bottom, right top, from(#181819), color-stop(#262a33), color-stop(#2f3f4e), color-stop(#315669), to(#2e6f81));
     background-image: -webkit-linear-gradient(left bottom, #181819, #262a33, #2f3f4e, #315669, #2e6f81);

@@ -4,19 +4,49 @@
     
 
 //Slider
+.slider-count
+    height: 30%
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    span 
+        display: block
+        background-color: white
+        // border-radius: 100%
+        text-align: center
+        color: $hdrGrey
+        vertical-align: middle
 
+.slider-text
+    height: 60%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 40%
+    .text
+        h2
+            font-size: 1.8rem 
+        h3
+            font-size: 1.5rem
+        p 
+            font-size: 1.3rem
 
 .slider
     height: 100vh
     width: 100%
     overflow: hidden
     .slide
+        display: flex
+        justify-content: space-around
+        align-items: center
         height: 100%
         width: 100%
         color: white 
         font-size: 2rem
         transition: all 100ms ease
         .buttons
+            display: flex
+            justify-content: space-between
             button
                 background-color: transparent
                 border: 2px solid $subHdrGrey
@@ -24,6 +54,12 @@
                     border-color: $greenColor
     .slide-one
         background-image: linear-gradient(to right top, #181819, #262a33, #2f3f4e, #315669, #2e6f81)
+        .slider-count
+            span
+                &:first-child
+                    // background-color: white
+                    // border-radius: 50px
+                    // color: transparent
     .slide-two
         background-image: linear-gradient(to right top, #181819, #043a50, #00646f, #008d5a, #75ac08)
     .slide-three
