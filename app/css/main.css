@@ -89,6 +89,8 @@ header {
     -webkit-transition: all 100ms;
     -o-transition: all 100ms;
     transition: all 100ms; }
+    .buttons button:focus {
+      outline: none; }
     .buttons button:hover {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -180,7 +182,11 @@ header {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
   .slider-count span {
-    display: block;
+    opacity: .7;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
     background-color: white;
     text-align: center;
     color: #383838;
@@ -251,21 +257,29 @@ header {
     background-image: -webkit-linear-gradient(left bottom, #181819, #262a33, #2f3f4e, #315669, #2e6f81);
     background-image: -o-linear-gradient(left bottom, #181819, #262a33, #2f3f4e, #315669, #2e6f81);
     background-image: linear-gradient(to right top, #181819, #262a33, #2f3f4e, #315669, #2e6f81); }
+    .slider .slide-one .slider-count span:first-child {
+      opacity: 1; }
   .slider .slide-two {
     background-image: -webkit-gradient(linear, left bottom, right top, from(#181819), color-stop(#043a50), color-stop(#00646f), color-stop(#008d5a), to(#75ac08));
     background-image: -webkit-linear-gradient(left bottom, #181819, #043a50, #00646f, #008d5a, #75ac08);
     background-image: -o-linear-gradient(left bottom, #181819, #043a50, #00646f, #008d5a, #75ac08);
     background-image: linear-gradient(to right top, #181819, #043a50, #00646f, #008d5a, #75ac08); }
+    .slider .slide-two .slider-count span:nth-child(2) {
+      opacity: 1; }
   .slider .slide-three {
     background-image: -webkit-gradient(linear, left bottom, right top, from(#181819), color-stop(#1b1d36), color-stop(#1b2154), color-stop(#1c2473), to(#212491));
     background-image: -webkit-linear-gradient(left bottom, #181819, #1b1d36, #1b2154, #1c2473, #212491);
     background-image: -o-linear-gradient(left bottom, #181819, #1b1d36, #1b2154, #1c2473, #212491);
     background-image: linear-gradient(to right top, #181819, #1b1d36, #1b2154, #1c2473, #212491); }
+    .slider .slide-three .slider-count span:nth-child(3) {
+      opacity: 1; }
   .slider .slide-four {
     background-image: -webkit-gradient(linear, right top, left bottom, from(#f67d1b), color-stop(#d14b4f), color-stop(#8c385d), color-stop(#442d47), to(#171718));
     background-image: -webkit-linear-gradient(right top, #f67d1b, #d14b4f, #8c385d, #442d47, #171718);
     background-image: -o-linear-gradient(right top, #f67d1b, #d14b4f, #8c385d, #442d47, #171718);
     background-image: linear-gradient(to left bottom, #f67d1b, #d14b4f, #8c385d, #442d47, #171718); }
+    .slider .slide-four .slider-count span:last-child {
+      opacity: 1; }
 
 .third-section {
   height: 100vh; }

@@ -9,10 +9,12 @@
     display: flex
     flex-direction: column
     justify-content: space-around
-    span 
-        display: block
+    span
+        opacity: .7
+        width: 40px
+        height: 40px
+        border-radius: 30px 
         background-color: white
-        // border-radius: 100%
         text-align: center
         color: $hdrGrey
         vertical-align: middle
@@ -57,12 +59,22 @@
         .slider-count
             span
                 &:first-child
-                    // background-color: white
-                    // border-radius: 50px
-                    // color: transparent
+                    opacity: 1
     .slide-two
         background-image: linear-gradient(to right top, #181819, #043a50, #00646f, #008d5a, #75ac08)
+        .slider-count
+            span
+                &:nth-child(2)
+                    opacity: 1
     .slide-three
         background-image: linear-gradient(to right top, #181819, #1b1d36, #1b2154, #1c2473, #212491)
+        .slider-count
+            span
+                &:nth-child(3)
+                    opacity: 1
     .slide-four
         background-image: linear-gradient(to left bottom, #f67d1b, #d14b4f, #8c385d, #442d47, #171718)
+        .slider-count
+            span
+                &:last-child
+                    opacity: 1
