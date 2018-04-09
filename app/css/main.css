@@ -1,17 +1,36 @@
 header {
   width: 100%;
   height: 10vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 3px 3px 25px 0px rgba(130, 130, 130, 0.28); }
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 3px 3px 25px 0px rgba(130, 130, 130, 0.28);
+          box-shadow: 3px 3px 25px 0px rgba(130, 130, 130, 0.28); }
 
 .header-wrp {
   width: 25%;
   height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
 
 .header-item {
   display: inline-block; }
@@ -38,8 +57,14 @@ header {
 
 .hdr-menu {
   color: #383838;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 1.2em;
   font-weight: 600; }
   .hdr-menu .header-item {
@@ -53,21 +78,47 @@ header {
     width: 60%;
     margin: 0 auto;
     height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly; }
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
 
 .img-wrp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .img-wrp img {
-    height: 90%; }
+    width: 90%; }
 
 .text-wrp {
   width: 32%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
   .text-wrp h1 {
     font-size: 1.6rem;
     color: #383838; }
@@ -82,20 +133,27 @@ header {
     .text-wrp .buttons div {
       cursor: pointer;
       font-weight: bold;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       background-color: #898888;
       color: white;
       display: inline-block;
       padding: 2% 5%;
-      border-radius: 20px;
+      -webkit-border-radius: 20px;
+              border-radius: 20px;
       border: 2px solid transparent;
+      -webkit-transition: all 100ms;
+      -o-transition: all 100ms;
       transition: all 100ms; }
       .text-wrp .buttons div:hover {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         background-color: white;
         color: #639e39;
         border: 2px solid;
         border-color: #639e39;
+        -webkit-transition: all 100ms;
+        -o-transition: all 100ms;
         transition: all 100ms; }
 
 .av-icons i {
@@ -104,8 +162,40 @@ header {
 
 .second-section {
   height: 100vh;
+  width: 100%; }
+
+.slider {
+  height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to left bottom, #f67d1b, #d14b4f, #8c385d, #442d47, #171718); }
+  overflow: hidden; }
+  .slider .slide {
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    -webkit-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease; }
+  .slider .slide-one {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#181819), color-stop(#262a33), color-stop(#2f3f4e), color-stop(#315669), to(#2e6f81));
+    background-image: -webkit-linear-gradient(left bottom, #181819, #262a33, #2f3f4e, #315669, #2e6f81);
+    background-image: -o-linear-gradient(left bottom, #181819, #262a33, #2f3f4e, #315669, #2e6f81);
+    background-image: linear-gradient(to right top, #181819, #262a33, #2f3f4e, #315669, #2e6f81); }
+  .slider .slide-two {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#181819), color-stop(#043a50), color-stop(#00646f), color-stop(#008d5a), to(#75ac08));
+    background-image: -webkit-linear-gradient(left bottom, #181819, #043a50, #00646f, #008d5a, #75ac08);
+    background-image: -o-linear-gradient(left bottom, #181819, #043a50, #00646f, #008d5a, #75ac08);
+    background-image: linear-gradient(to right top, #181819, #043a50, #00646f, #008d5a, #75ac08); }
+  .slider .slide-three {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#181819), color-stop(#1b1d36), color-stop(#1b2154), color-stop(#1c2473), to(#212491));
+    background-image: -webkit-linear-gradient(left bottom, #181819, #1b1d36, #1b2154, #1c2473, #212491);
+    background-image: -o-linear-gradient(left bottom, #181819, #1b1d36, #1b2154, #1c2473, #212491);
+    background-image: linear-gradient(to right top, #181819, #1b1d36, #1b2154, #1c2473, #212491); }
+  .slider .slide-four {
+    background-image: -webkit-gradient(linear, right top, left bottom, from(#f67d1b), color-stop(#d14b4f), color-stop(#8c385d), color-stop(#442d47), to(#171718));
+    background-image: -webkit-linear-gradient(right top, #f67d1b, #d14b4f, #8c385d, #442d47, #171718);
+    background-image: -o-linear-gradient(right top, #f67d1b, #d14b4f, #8c385d, #442d47, #171718);
+    background-image: linear-gradient(to left bottom, #f67d1b, #d14b4f, #8c385d, #442d47, #171718); }
 
 .third-section {
   height: 100vh; }
