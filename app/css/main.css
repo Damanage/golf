@@ -72,6 +72,34 @@ header {
     .hdr-menu .header-item:hover {
       color: #639e39; }
 
+.buttons {
+  text-align: center; }
+  .buttons button {
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #898888;
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    border: 2px solid transparent;
+    -webkit-transition: all 100ms;
+    -o-transition: all 100ms;
+    transition: all 100ms; }
+    .buttons button:hover {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      background-color: transparent;
+      color: #639e39;
+      border: 2px solid;
+      border-color: #639e39;
+      -webkit-transition: all 100ms;
+      -o-transition: all 100ms;
+      transition: all 100ms; }
+
 .first-section {
   height: 90vh; }
   .first-section .section-wrp {
@@ -128,33 +156,6 @@ header {
   .text-wrp h2 {
     color: #898888;
     text-align: left; }
-  .text-wrp .buttons {
-    text-align: center; }
-    .text-wrp .buttons div {
-      cursor: pointer;
-      font-weight: bold;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      background-color: #898888;
-      color: white;
-      display: inline-block;
-      padding: 2% 5%;
-      -webkit-border-radius: 20px;
-              border-radius: 20px;
-      border: 2px solid transparent;
-      -webkit-transition: all 100ms;
-      -o-transition: all 100ms;
-      transition: all 100ms; }
-      .text-wrp .buttons div:hover {
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        background-color: white;
-        color: #639e39;
-        border: 2px solid;
-        border-color: #639e39;
-        -webkit-transition: all 100ms;
-        -o-transition: all 100ms;
-        transition: all 100ms; }
 
 .av-icons i {
   padding: 2px;
@@ -176,6 +177,11 @@ header {
     -webkit-transition: all 100ms ease;
     -o-transition: all 100ms ease;
     transition: all 100ms ease; }
+    .slider .slide .buttons button {
+      background-color: transparent;
+      border: 2px solid #898888; }
+      .slider .slide .buttons button:hover {
+        border-color: #639e39; }
   .slider .slide-one {
     background-image: -webkit-gradient(linear, left bottom, right top, from(#181819), color-stop(#262a33), color-stop(#2f3f4e), color-stop(#315669), to(#2e6f81));
     background-image: -webkit-linear-gradient(left bottom, #181819, #262a33, #2f3f4e, #315669, #2e6f81);
