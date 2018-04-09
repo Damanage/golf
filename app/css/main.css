@@ -18,13 +18,17 @@ header {
 
 .login {
   font-weight: normal;
-  color: #333333;
+  color: #898888;
   text-align: right; }
   .login .sign-in {
-    border-right: 2px solid grey;
+    border-right: 1px solid #898888;
     padding-right: 5%; }
   .login .sign-out {
     padding-left: 5%; }
+  .login span {
+    cursor: pointer; }
+    .login span:hover {
+      color: #639e39; }
 
 .header-logo {
   height: 100%; }
@@ -33,7 +37,7 @@ header {
     padding: 5% 0; }
 
 .hdr-menu {
-  color: #767676;
+  color: #383838;
   display: flex;
   justify-content: space-between;
   font-size: 1.2em;
@@ -51,18 +55,51 @@ header {
     height: 100%;
     display: flex;
     justify-content: space-evenly; }
-    .first-section .section-wrp .img-wrp {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .first-section .section-wrp .img-wrp img {
-        height: 90%; }
+
+.img-wrp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .img-wrp img {
+    height: 90%; }
 
 .text-wrp {
   width: 32%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; }
+  .text-wrp h1 {
+    font-size: 1.6rem;
+    color: #383838; }
+  .text-wrp p {
+    font-size: 1.1rem;
+    color: #898888; }
+  .text-wrp h2 {
+    color: #898888;
+    text-align: left; }
+  .text-wrp .buttons {
+    text-align: center; }
+    .text-wrp .buttons div {
+      font-weight: bold;
+      box-sizing: border-box;
+      background-color: #898888;
+      color: white;
+      display: inline-block;
+      padding: 2% 5%;
+      border-radius: 20px;
+      border: 2px solid transparent;
+      transition: all 100ms; }
+      .text-wrp .buttons div:hover {
+        box-sizing: border-box;
+        background-color: white;
+        color: #639e39;
+        border: 2px solid;
+        border-color: #639e39;
+        transition: all 100ms; }
+
+.av-icons i {
+  padding: 2px;
+  color: #639e39; }
 
 .wrapper {
   height: 100%;
