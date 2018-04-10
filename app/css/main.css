@@ -283,6 +283,94 @@ header {
 
 .third-section {
   height: 100vh; }
+  .third-section .section-wrp {
+    height: 100%; }
+    .third-section .section-wrp .footer-item:nth-child(2) {
+      height: 30%;
+      border-bottom: 1px solid rgba(138, 138, 138, 0.32); }
+
+.footer-icons {
+  text-align: center;
+  border-bottom: 1px solid rgba(138, 138, 138, 0.32); }
+  .footer-icons div {
+    display: inline-block;
+    width: 10%;
+    padding: 65px 10px; }
+    .footer-icons div img {
+      width: 100%;
+      cursor: pointer;
+      -webkit-transition: -webkit-transform 200ms;
+      transition: -webkit-transform 200ms;
+      -o-transition: transform 200ms;
+      transition: transform 200ms;
+      transition: transform 200ms, -webkit-transform 200ms; }
+      .footer-icons div img:hover {
+        -webkit-transform: scale(0.96);
+            -ms-transform: scale(0.96);
+                transform: scale(0.96);
+        -webkit-transition: -webkit-transform 200ms;
+        transition: -webkit-transform 200ms;
+        -o-transition: transform 200ms;
+        transition: transform 200ms;
+        transition: transform 200ms, -webkit-transform 200ms; }
+
+.customers-slider {
+  height: 100%;
+  position: relative; }
+
+.f-slide {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center; }
+
+.slider-buttons button {
+  background-color: transparent;
+  border: none;
+  color: #898888;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  -o-transition: transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+  cursor: pointer; }
+  .slider-buttons button:focus {
+    outline: none; }
+  .slider-buttons button:hover {
+    color: #383838;
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
+    -webkit-transition: -webkit-transform 200ms;
+    transition: -webkit-transform 200ms;
+    -o-transition: transform 200ms;
+    transition: transform 200ms;
+    transition: transform 200ms, -webkit-transform 200ms; }
+
+.slider-buttons .forward {
+  position: absolute;
+  right: 5%;
+  top: -50%;
+  bottom: -50%; }
+
+.slider-buttons .back {
+  position: absolute;
+  left: 5%;
+  top: -50%;
+  bottom: -50%; }
 
 .wrapper {
   height: 100%;
