@@ -5,19 +5,43 @@
 
 //Slider
 .slider-count
+    position: absolute
+    left: 55%
     height: 30%
     display: flex
     flex-direction: column
     justify-content: space-around
-    span
-        opacity: .7
+    
+    .span-wrp
+        background-color: white
         width: 40px
         height: 40px
-        border-radius: 30px 
-        background-color: white
-        text-align: center
-        color: $hdrGrey
-        vertical-align: middle
+        border-radius: 50%
+        position: relative
+        opacity: .7
+        &:first-child
+            &:after
+                content: none
+        &:after
+            left: 50%
+            top: -70%
+            position: absolute
+            content: ' '
+            width: 2px
+            height: 60%
+            background-color: white
+            opacity: .7
+            display: block
+            margin: 0 auto
+        span
+            position: absolute
+            
+            top: -5%
+            width: 100%
+            height: 100%
+            text-align: center
+            color: $hdrGrey
+            display: block
 
 .slider-text
     height: 60%
@@ -42,6 +66,7 @@
     width: 100%
     overflow: hidden
     .slide
+        position: relative
         display: flex
         justify-content: space-around
         align-items: center
@@ -61,24 +86,24 @@
     .slide-one
         background-image: linear-gradient(to right top, #181819, #262a33, #2f3f4e, #315669, #2e6f81)
         .slider-count
-            span
+            .span-wrp
                 &:first-child
                     opacity: 1
     .slide-two
         background-image: linear-gradient(to right top, #181819, #043a50, #00646f, #008d5a, #75ac08)
         .slider-count
-            span
+            .span-wrp
                 &:nth-child(2)
                     opacity: 1
     .slide-three
         background-image: linear-gradient(to right top, #181819, #1b1d36, #1b2154, #1c2473, #212491)
         .slider-count
-            span
+            .span-wrp
                 &:nth-child(3)
                     opacity: 1
     .slide-four
         background-image: linear-gradient(to left bottom, #f67d1b, #d14b4f, #8c385d, #442d47, #171718)
         .slider-count
-            span
-                &:last-child
+            .span-wrp
+                &:nth-child(4)
                     opacity: 1
