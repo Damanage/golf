@@ -1,18 +1,34 @@
+//Third section
 .third-section
+    color: #898888
     height: 100vh
     .section-wrp
+        display: flex
+        flex-direction: column
+        justify-content: center
         height: 100%
         .footer-item
+            height: 30%
             &:nth-child(2)
-                height: 30%
+                height: 35%
                 border-bottom: 1px solid hsla(0, 0%, 54%, 0.32)
+            &:nth-child(3)
+                display: flex
+                flex-direction: column
+                justify-content: center
+
+//Icons
 .footer-icons
+    height: 100%
     text-align: center
     border-bottom: 1px solid hsla(0, 0%, 54%, 0.32)
+    display: flex
+    align-items: center
+    justify-content: center
     div
         display: inline-block
-        width: 10%
-        padding: 65px 10px
+        width: 12%
+        padding: 0 10px
         img 
             width: 100%
             cursor: pointer
@@ -20,6 +36,8 @@
             &:hover
                 transform: scale(.96)
                 transition: transform 200ms
+
+//Slider
 .customers-slider
     height: 100%
     position: relative
@@ -49,12 +67,35 @@
         position: absolute
         right: 5%
         top: -50%
-        bottom: -50%
-        
-        
+        bottom: -50% 
 
     .back
         position: absolute
         left: 5%
         top: -50%
-        bottom: -50%    
+        bottom: -50%   
+
+//Footer and copyright
+
+.footer-map
+    margin: 0 auto
+    width: 70%
+    display: flex
+    justify-content: center
+    div
+        text-align: left
+        flex: 1
+        display: inline-block
+        h3 
+            color: $hdrGrey
+ul
+    padding: 0
+    margin: 0
+    li  
+        cursor: pointer
+        font-size: 
+        padding: 3px
+        list-style: none
+.copyright
+    text-align: center
+    padding-top: 2%
