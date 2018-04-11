@@ -176,7 +176,7 @@ header {
 .slider-count {
   position: absolute;
   left: 55%;
-  height: 30%;
+  height: 40%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -201,10 +201,10 @@ header {
       content: none; }
     .slider-count .span-wrp:after {
       left: 50%;
-      top: -70%;
+      top: -100%;
       position: absolute;
       content: ' ';
-      width: 2px;
+      width: 1px;
       height: 60%;
       background-color: white;
       opacity: .7;
