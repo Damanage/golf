@@ -38,9 +38,10 @@ header {
 .login {
   font-weight: normal;
   color: #898888;
-  text-align: right; }
+  text-align: right;
+  font-size: 1.2rem; }
   .login .sign-in {
-    border-right: 1px solid #898888;
+    border-right: 1px solid #89888859;
     padding-right: 5%; }
   .login .sign-out {
     padding-left: 5%; }
