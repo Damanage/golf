@@ -1,4 +1,4 @@
-console.log('this shit is working')
+//Slider func
 let currentSlide = 1;
 
 let nextSlide = (n) => {
@@ -16,8 +16,13 @@ let slideMachine = (n, classN) => {
         currentSlide = elem.length
     for(let i =0; i<elem.length; i++){
         elem[i].style.display = 'none';
+        elem[i].style.opacity = '0';
     }
     elem[currentSlide-1].style.display = 'flex';
+    setTimeout(()=>{
+        elem[currentSlide-1].style.opacity = '1';
+    } , 200);
+    
 }
 
 slideMachine(currentSlide, 'slide');
